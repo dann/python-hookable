@@ -36,10 +36,10 @@ def call_trigger(trigger, *args):
             func(*args)
 
 
-# TODO FIXME
-
-
 def call_trigger_with_return(trigger, arg):
+
+    # TODO FIXME
+
     trigger = __hookable_triggers__.get(trigger, None)
     if trigger:
         for func in trigger:
